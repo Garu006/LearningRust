@@ -1,15 +1,19 @@
-std::io;
+use std::io; // standard library input/output module
 
 fn main() {
     println!("Guess the number!");
+
     println!("Please input your guess.");
 
-    let mut guess = String::new(); //variable mutable, String::new() creates a new empty string
+    let mut guess = String::new(); // create a mutable variable guess and initialize it with a empty string
 
-    io::stdin()
-        .read_line(&mut guess) //&mut guess is a mutable reference to the variable guess
-        .expect("Failed to read line"); //expect() is a method that returns the value of the result if its ok or not
+    io::stdin() // get the standard input handle
+        .read_line(&mut guess) 
+        .expect("Failed to read line");
 
-    println!("Your guess: {guess}");
+    println!("You guessed: {guess}");
 
+    let x = 5;
+    let y = 10;
+    println!("x = {x} and y + 2 = {}", y + 2);
 }
