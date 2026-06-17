@@ -49,9 +49,14 @@ fn main() {
     println!("{c}, {z}, {beaver}");
 
     // compound types
+    //tuples type
     let tup: (i32, f64, u8) = (500, 6.4, 1);
     let (_x, y, _z) = tup;
     println!("el valor de y es: {y}");
 
-    // arrays
+    let five_hundred = tup.0;
+    let six_point_four = tup.1;
+    let one = tup.2;
+    println!("Los valores de la tupla son: {five_hundred}, {six_point_four}, {one}");
+    
 }
