@@ -7,7 +7,7 @@ fn main() {
 
     let secret_number = (rand::rng().next_u32() % 100) + 1; //generate a random number between 1 and 100
 
-    loop{
+    loop{ // start an infinte loop to allow the user to keep guessing until they get the correct answer
         println!("Please input your guess.");
 
         let mut guess = String::new(); // create a mutable variable guess and initialize it with a empty string

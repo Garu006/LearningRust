@@ -1,5 +1,5 @@
 fn main() {
-    let x = 5;
+/*  let x = 5;
     let x = x + 1;
 
     {
@@ -58,5 +58,24 @@ fn main() {
     let six_point_four = tup.1;
     let one = tup.2;
     println!("Los valores de la tupla son: {five_hundred}, {six_point_four}, {one}");
-    
+*/
+    //array type
+    //invalid array element access
+    use std::io;
+    let a = [1, 2, 3, 4, 5];
+
+    println!("Por favor ingresa un índice para acceder al elemento del array: ");
+
+    let mut index = String::new();
+
+    io::stdin()
+        .read_line(&mut index)
+        .expect("Failed to read line");
+    let index: usize = index
+        .trim()
+        .parse()
+        .expect("El índice ingresado no es un número válido");
+
+    let element = a[index];
+    println!("El elemento del array en el índice {index} es: {element}");
 }
