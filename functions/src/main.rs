@@ -1,4 +1,5 @@
 fn main() {
+    controlFlow();
     print_labeled_measurement(5, 'h');
 
     //another way to call the function
@@ -25,4 +26,15 @@ fn five() -> i32 { //funcion que no recive ningun parametro pero devuelve un ent
 }
 fn plus_one(x: i32) -> i32 {//funcion que recibe un entero y devuelve el valor del parametro mas 1
     x + 1
+}
+
+// Control Flow
+
+fn controlFlow() {
+    let number = 7;
+    if number < 5 {
+        println!("La condición es verdadera");
+    } else {
+        println!("La condición es falsa");
+    }
 }
