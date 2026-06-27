@@ -37,4 +37,15 @@ fn controlFlow() {
     } else {
         println!("La condición es falsa");
     }
+    let num = 8k;
+    if num % 4 == 0{
+        println!("el numero es divisible por 4");
+    } else if num % 3 == 0 {
+        println!("El numero es divisible por 3");
+    } else if num % 2 == 0 {
+        println!("El numero es divisible por 2");
+    } else {
+        println!("El numero no es divisible por nada");
+    }
+    
 }
